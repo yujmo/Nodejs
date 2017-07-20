@@ -11,6 +11,12 @@ var user = {
     }
 };
 
+app.get('listUsers',function(req,res){
+    fs.readFile(__dirname + "/" + "users.json",'utf8',function(err,data){
+	console.log(data);
+	res.end(data);
+})
+
 app.get('/addUser',function(req,res){
     fs.readFile(__dirname + "/" + "users.json",'utf8',function(err,data){
 	data = JSON.parse(data);
@@ -28,27 +34,15 @@ app.get('/deleteUser',function(req,res){
 	res.end(JSON.stringify(data));
     });
 })
-
-function onRequest(req,res){
-    fs.readFile(__dirname + "/" + "users.json",'utf8',function(err,data){
-	console.log(data);
-	res.end(data);
-    });
-}
-
-app.get('/listUsers',onRequest);
-
-app.get('/:id',function(req,res){
-    fs.readFile(__dirname + "/" + "users.json",'utf8',function(err,data){
-	data = JSON.parse(data);
-	var user = data["user" + req.params.id];
-	console.log(user);
-	res.end(JSON.stringify(user));
-    });
-})
-
-
-
+    app.get('/:id',function(req,res){
+	fs.readFile(__dirname + "/" + "users.json",'utf8',function(err,data){
+	    data = JSON.parse(data);
+	    var user = data["user" + req.params.id];
+	    console.log(user);
+	    res.end(JSON.stringify(user));
+	});
+    })
+    
 var server = app.listen(8888,function(){
     console.log("Server has started. ");
 });
