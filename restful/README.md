@@ -14,7 +14,7 @@ REST介绍：
 RESTful Web Services
 ###
     1. Web service是一个平台独立的，低耦合的，自包含的、基于可编程的web的应用程序。
-    2. 可使用开放的XML（标准通用标记语言下的一个子集）标准来描述、发布、发现、协调和配置这些应用程序，用于开发分布式的互操作的应用程序。
+    2. 可使用开放的XML标准来描述、发布、发现、协调和配置这些应用程序，用于开发分布式的互操作的应用程序。
     3. 基于 REST 架构的 Web Services 即是 RESTful。
     4. 由于轻量级以及通过 HTTP 直接传输数据的特性，Web 服务的 RESTful 方法已经成为最常见的替代方法。
     5. 可以使用各种语言（比如 Java 程序、Perl、Ruby、Python、PHP 和 Javascript[包括 Ajax]）实现客户端。
