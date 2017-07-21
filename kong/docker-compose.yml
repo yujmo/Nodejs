@@ -1,11 +1,18 @@
-version: "1"
 services:
-  kong-database:
+  kongdatabase:
     image: cassandra:3
     container_name: kong-database
     restart: always
     ports:
       - "9042:9042"
+  kongui:
+    image: pgbi/kong-dashboard:latest
+    container_name: kong-ui
+    restart: always
+    links: 
+      - kong
+    ports:
+      - "8002:8080"
   kong:
     image: kong:latest
     container_name: kong
@@ -22,11 +29,3 @@ services:
       - "7946:7946/udp"
     links:
       - kong-database
-  kong-ui:
-    image: pgbi/kong-dashboard
-    container_name: kong-ui
-    restart: always
-    links: 
-      - kong
-    ports:
-      - "8002:8080"
