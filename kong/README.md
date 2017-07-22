@@ -9,3 +9,6 @@
 
     sudo docker run -d --name kong-ui --restart=always \ 
     --link kong:kong -p 8002:8080 pgbi/kong-dashboard
+参考文档
+===
+    URL链接(http://www.cnblogs.com/SummerinShire/category/861287.html)
