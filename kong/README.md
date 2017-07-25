@@ -6,10 +6,10 @@ REST编程
 	3. REST通常基于使用HTTP，URI，和XML以及HTML等这些现有的广泛流行的协议和标准。
 	4. REST 通常使用 JSON 数据格式。
 	5. HTTP 方法（REST 基本架构的四个方法）：
-	   	1. GET - 用于获取数据。
-	   	2. PUT - 用于更新或添加数据。
- 		3.  DELETE - 用于删除数据。
-	   	4. POST - 用于添加数据。
+	   	1. GET    - 用于获取数据。
+	   	2. PUT    - 用于更新或添加数据。
+ 		3. DELETE - 用于删除数据。
+	   	4. POST   - 用于添加数据。
 
 RESTful Web Services
 ###
