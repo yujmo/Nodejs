@@ -8,7 +8,7 @@ REST编程
 	5. HTTP 方法（REST 基本架构的四个方法）：
 	   	1. GET - 用于获取数据。
 	   	2. PUT - 用于更新或添加数据。
-       	   	3. DELETE - 用于删除数据。
+ 		3.  DELETE - 用于删除数据。
 	   	4. POST - 用于添加数据。
 
 RESTful Web Services
