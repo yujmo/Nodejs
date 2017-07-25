@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 案例介绍：
 ###
 	1. 客户端与服务端连接，服务端负责具体的服务功能，将认证等功能转移给中间的kong组件。
@@ -45,3 +46,19 @@ RESTful Web Services
     5. 可以使用各种语言（比如 Java 程序、Perl、Ruby、Python、PHP 和 Javascript[包括 Ajax]）实现客户端。
     6. RESTful Web 服务通常可以通过自动客户端或代表用户的应用程序访问。
     7. 这种服务的简便性让用户能够与之直接交互，使用它们的 Web 浏览器构建一个 GET URL 并读取返回的内容。
+=======
+安装部署kong、kong-ui
+===
+    sudo docker run -d --name kong-database -p 9042:9042 cassandra:3
+
+    sudo docker run -d --name kong  --link kong-database:kong-database \
+    -e "KONG_DATABASE=cassandra" -e "KONG_CASSANDRA_CONTACT_POINTS=kong-database" \
+    -e "KONG_PG_HOST=kong-database" -p 8000:8000 -p 8443:8443 \
+    -p 8001:8001 -p 7946:7946 -p 7946:7946/udp kong:latest
+
+    sudo docker run -d --name kong-ui --restart=always \ 
+    --link kong:kong -p 8002:8080 pgbi/kong-dashboard
+参考文档
+===
+[点击URL链接](http://www.cnblogs.com/SummerinShire/category/861287.html)
+>>>>>>> 6f15fbdf58acb0ee12e5a8cfcda172b858c30cf8
