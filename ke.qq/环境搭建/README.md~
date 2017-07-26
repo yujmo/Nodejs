@@ -1,9 +1,0 @@
-NodeJs简介：
-###	
-	1. Node.js 就是运行在服务端的 JavaScript。
-	2. Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎，V8引擎执行Javascript的速度非常快，性能非常好。
-	3. Node.js 是运行在服务端的 JavaScript，如果你熟悉Javascript，那么你将会很容易的学会Node.js。
-
-
-
-
