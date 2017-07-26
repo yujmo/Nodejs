@@ -1,21 +1,15 @@
 var http = require('http');
+var url = require('url');
 
-/*
-var options = {
-	hostname: '127.0.0.1',
-	port: '8000',
-	path: '/listusers',
-	method: 'GET',
-	headers: {
-		'Host': 'example.com',
-		'apikey': 'ENTER_KEY_HERE'
-	}
-}
-*/
-
-function onRequest(request,response,postHTML){
+function start(postHTML){
+    function onRequest(request,response){
 	response.writeHead(200,{'Content-Type':'text/html'});
 	response.write(postHTML);
+	var pathname = url.parse(request.url).pathname;
+	response.write(pathname);
 	response.end();
+    }
+    http.createServer(onRequest).listen(8887);
 }
-http.createServer(onRequest).listen(8887);
+
+exports.start = start;
