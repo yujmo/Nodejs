@@ -13,7 +13,15 @@ var options = {
 }
 */
 
-function onRequest(request,response,postHTML){
+function onRequest(request,response){
+	var postHTML =
+		'<html><head><meta charset="utf-8"><title>kong</title></head>' +
+		'<body>' +
+		'<form method="post">' +
+		'url： <input name="name"><br>' +
+		'<input type="submit" ><br>' +
+		'</form>' +
+		'</body></html>';
 	response.writeHead(200,{'Content-Type':'text/html'});
 	response.write(postHTML);
 	response.end();
