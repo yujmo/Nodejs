@@ -12,7 +12,8 @@ NodeJs简介：
 	4. mo@mo:~$ touch test #新建文件test
 	5. mo@mo:~$ vim test #编辑文件test
 
-[URL]http://nodejs.cn/
+	[URL]http://nodejs.cn/
+	
 	6. mo@mo:/tmp$ wget http://cdn.npm.taobao.org/dist/node/v8.2.1/node-v8.2.1-linux-x64.tar.xz #下载node
 	7. mo@mo:/tmp$ xz -d node-v8.2.1-linux-x64.tar.xz
 	8. mo@mo:/tmp$ tar -xvf node-v8.2.1-linux-x64.tar
