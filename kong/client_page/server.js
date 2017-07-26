@@ -1,16 +1,6 @@
 var http = require('http');
 var querystring = require('querystring');
 
-var options = {
-	hostname: '127.0.0.1',
-	port: '8000',
-	path: '/listusers',
-	method: 'GET',
-	headers: {
-		'Host': 'example.com',
-		'apikey': 'ENTER_KEY_HERE'
-	}
-}
 
 http.createServer(function(req,res){
 	var postHTML =
@@ -24,6 +14,20 @@ http.createServer(function(req,res){
 	res.writeHeader(200,{'Content-Type':'text/html'});
 	res.write(postHTML);
 	res.end();
+var options = {
+	hostname: '127.0.0.1',
+	port: '8000',
+	path: '/listusers',
+	method: 'GET',
+	headers: {
+		'Host': 'example.com',
+		'apikey': 'ENTER_KEY_HERE'
+	}
+}
+
+
+
+
 }).listen(8887);
 function GET(options){ 
 	var req = http.request(options,function(res){
