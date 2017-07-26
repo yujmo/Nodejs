@@ -1,4 +1,4 @@
-function route(pathname){
+function route(pathname,handle){
     console.log(pathname);
 }
 
