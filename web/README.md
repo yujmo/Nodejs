@@ -2,3 +2,4 @@
     example.js是为了学习函数传递；
 [参考文件](https://www.nodebeginner.org/index-zh-cn.html)
 
+	路由：为路由提供请求的URL和其他需要的GET、POST参数

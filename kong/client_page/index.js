@@ -1,4 +1,5 @@
 var server = require('./server');
+var route = require('./route');
 
 var postHTML =
 	'<html><head><meta charset="utf-8"><title>kong</title></head>' +
@@ -10,7 +11,7 @@ var postHTML =
         '</body></html>';
 
 
-server.start(postHTML);
+server.start(postHTML,route.route);
 
 
 
