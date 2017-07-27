@@ -4,6 +4,7 @@ var querystring = require('querystring');
 function handle(postData,response,request,postHTML){
     response.writeHead(200,{"Content-type":"text/html"});
     response.write(postHTML);
+    response.write(postData);
     response.end()
 } 
 /*
