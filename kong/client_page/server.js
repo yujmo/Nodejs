@@ -1,13 +1,15 @@
 var http = require('http');
-var url = require('url');
 
 function start(postHTML,route,handle){
     function onRequest(request,response){
-	response.writeHead(200,{'Content-Type':'text/html'});
-	response.write(postHTML);
-	var pathname = url.parse(request.url).pathname;
-	route(pathname,handle);
-	response.end();
+	var postData = "";
+	request.addListener("data",function(postDataChunk){
+	    postData += postDataChunk;
+	});
+	
+	request.addListener("end",function(){
+	    route(postData,handle,response,request,postHTML);
+	});
     }
     http.createServer(onRequest).listen(8887);
 }
