@@ -1,6 +1,6 @@
 var server = require('./server');
 var route = require('./route');
-var handle = require('requestHandlers');
+var handle = require('./requestHandlers');
 
 var postHTML =
 	'<html><head><meta charset="utf-8"><title>kong</title></head>' +
