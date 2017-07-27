@@ -6,9 +6,9 @@ function handle(postData,response,request,postHTML){
     response.write(postHTML);
     response.end()
 } 
-
-//function getAPIs(postData,response,postHTML){
-/*    response.writeHead(200,{"Content-type":"text/html"});
+/*
+function getAPIs(postData,response,postHTML){
+    response.writeHead(200,{"Content-type":"text/html"});
     
     function cache(){
 	var options = {
@@ -33,10 +33,10 @@ function handle(postData,response,request,postHTML){
     }
     response.write(cache);
     response.end();
-*/
-   // ;
-    //console.log("xx");
-//}
 
+    ;
+    //console.log("xx");
+}
+*/
 exports.handle = handle;
 //exports.getAPIs = getAPIs; 
