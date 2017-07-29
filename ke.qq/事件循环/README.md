@@ -17,5 +17,15 @@ Node.js事件循环
 ===
 	1. 事件相当于一个主题(Subject)，而所有注册到这个事件上的处理函数相当于观察者(Observer)。
 	2. 观察者观察者观察到事件，观察者就做出相应的措施。
-	
 
+Node.js EventEmitter
+===
+	1. Node.js 所有的异步 I/O 操作在完成时都会发送一个事件到事件队列。
+	2. Node.js里面的许多对象都会分发事件：
+	   1. 一个net.Server对象会在每次有新连接时分发一个事件，
+	   2. 一个fs.readStream对象会在文件被打开的时候发出一个事件,
+	   3. 所有这些产生事件的对象都是events.EventEmitter的实例。 
+
+EventEmitter 类
+===
+	
