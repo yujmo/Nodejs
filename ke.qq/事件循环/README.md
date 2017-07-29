@@ -8,4 +8,4 @@ Node.js事件循环
 ###
 	1. 当web server接收到请求，就把它关闭然后进行处理，然后去服务下一个web请求。
 	2. 当这个请求完成，它被放回处理队列，当到达队列开头，这个结果被返回给用户。
-
+![event_loop](./images/event_loop.jpg)
