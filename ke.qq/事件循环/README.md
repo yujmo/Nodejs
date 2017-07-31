@@ -37,3 +37,7 @@ EventEmitter 类
 	![代码1]：(./event.js)
 
 	![代码2]：(./error.js)
+
+继承 EventEmitter
+===
+	1. 不直接使用EventEmitter，在对象中继承
