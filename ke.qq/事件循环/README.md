@@ -35,3 +35,5 @@ EventEmitter 类
 	5. 当监听器被移除时，removeListener 事件被触发。
 
 	![代码1]：(./event.js)
+
+	![代码2]：(./error.js)
