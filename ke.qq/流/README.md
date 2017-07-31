@@ -21,3 +21,7 @@ Node.js Stream(流)
 写入流
 ===
         ![例1](./write_output.js)
+
+管道流
+===
+	![图片](./images/pV.png)
