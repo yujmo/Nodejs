@@ -16,12 +16,12 @@ Node.js Stream(流)
 
 从流中读取数据
 ===
-	![例1](./read_input.js)
+![例1](./read_input.js)
 
 写入流
 ===
-        ![例1](./write_output.js)
+![例1](./write_output.js)
 
 管道流
 ===
-	![图片](./images/bV.png)
+![图片](./images/bV.png)
