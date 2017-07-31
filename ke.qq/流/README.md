@@ -24,4 +24,4 @@ Node.js Stream(流)
 
 管道流
 ===
-	![图片](./images/pV.png)
+	![图片](./images/bV.png)
