@@ -16,5 +16,8 @@ Node.js Stream(流)
 
 从流中读取数据
 ===
-	1. ![例1](./read_input.js)
+	![例1](./read_input.js)
 
+写入流
+===
+        ![例1](./write_output.js)
