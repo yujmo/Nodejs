@@ -23,9 +23,15 @@ Node.js EventEmitter
 	1. Node.js 所有的异步 I/O 操作在完成时都会发送一个事件到事件队列。
 	2. Node.js里面的许多对象都会分发事件：
 	   1. 一个net.Server对象会在每次有新连接时分发一个事件，
-	   2. 一个fs.readStream对象会在文件被打开的时候发出一个事件,
+	   2. 一个fs.readStream对象会在文件被打开的时候发出一个事件。
 	   3. 所有这些产生事件的对象都是events.EventEmitter的实例。 
 
 EventEmitter 类
 ===
-	
+	1. events模块只提供了一个对象：events.EventEmitter。
+	2. EventEmitter的核心就是事件触发与事件监听器功能的封装。
+	3. EventEmitter 对象如果在实例化时发生错误，会触发 error 事件。
+	4. 当添加新的监听器时，newListener 事件会触发。
+	5. 当监听器被移除时，removeListener 事件被触发。
+
+	![代码1]：(./event.js)
