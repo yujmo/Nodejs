@@ -34,9 +34,8 @@ EventEmitter 类
 	4. 当添加新的监听器时，newListener 事件会触发。
 	5. 当监听器被移除时，removeListener 事件被触发。
 
-	![代码1]：(./event.js)
-
-	![代码2]：(./error.js)
+![代码1]：(./event.js)
+![代码2]：(./error.js)
 
 继承 EventEmitter
 ===
