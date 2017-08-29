@@ -1,4 +1,5 @@
 version: "2"
+
 services:
   kong-database:
     image: postgres
@@ -9,7 +10,9 @@ services:
     environment:
       - POSTGRES_USER=kong
       - POSTGRES_DB=kong
-  kong:
+  kong-core:
+    depends_on:
+      - kong-database       
     image: kong:0.9.9
     container_name: kong-core
     environment:
@@ -25,6 +28,8 @@ services:
     links:
       - kong-database
   kong-ui:
+    depends_on:
+      - kong-core   
     image: pgbi/kong-dashboard
     container_name: kong-ui
     restart: always
