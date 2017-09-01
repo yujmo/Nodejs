@@ -1,1 +1,1 @@
-学习使用Nodejs进行开发。
+学习使用Nodejs进行开发，详细请参考Dockerfile
