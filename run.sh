@@ -2,5 +2,5 @@
 while read line
 do
       npm install $line
-done < install.txt
+done < /install.txt
 node /Nodejs/restful/server.js
